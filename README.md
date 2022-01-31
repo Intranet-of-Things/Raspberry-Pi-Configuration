@@ -1,2 +1,3 @@
 # Raspberry Pi Configuration
-Raspberry Pi configuration
+
+Skrypty do zarządzania Raspberry Pi.
