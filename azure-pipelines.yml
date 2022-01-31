@@ -1,0 +1,11 @@
+pr:
+- master
+- main
+- releases/*
+
+steps:
+- task: queryWorkItems@0
+  inputs:
+    queryId: 
+    #maxThreshold: '0' 
+    #minThreshold: '0' 
