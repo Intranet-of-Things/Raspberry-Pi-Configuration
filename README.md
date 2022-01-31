@@ -1,2 +1,2 @@
-# Raspberry-Pi-Configuration
+# Raspberry Pi Configuration
 Raspberry Pi configuration
