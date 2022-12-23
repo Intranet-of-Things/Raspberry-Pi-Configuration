@@ -1,4 +1,4 @@
 Uruchomienie playbook'a do instalacji docker'a:
 ```
-ansible-playbook installDocker.yml
+ansible-playbook installDocker.yaml
 ```
