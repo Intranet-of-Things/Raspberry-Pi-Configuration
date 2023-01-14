@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: true
+
+  tasks:
+  - name: docker-compose build and up
+    community.docker.docker_compose:
+#    docker_service:
+      state: present
+      build: True
+      project_src: "/media/Intranet-of-Things/Docker-for-Intranet-of-Things/MariaDB"
+      project_name: 'MariaDB'
+      restarted: True

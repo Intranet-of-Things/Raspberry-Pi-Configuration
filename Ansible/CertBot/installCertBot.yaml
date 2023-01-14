@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: true
+
+  tasks:
+# Install "certbot" snap
+    - name: Install certbot
+      community.general.snap:
+        name:
+          - certbot
+        classic: true
