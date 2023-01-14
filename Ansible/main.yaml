@@ -1,0 +1,13 @@
+- hosts: all
+
+- name: Install docker playbook
+  ansible.builtin.import_playbook: installDocker.yaml
+
+- name: install CertBot snap
+  ansible.builtin.import_playbook: installCertBot.yaml
+
+- name: run docker-compose for MariaDB
+  ansible.builtin.import_playbook: dockerComposeMariaDb.yaml
+
+- name: mount NTFS USB SSD Disk
+  ansible.builtin.import_playbook: mount_NTFS_USB_SSD_Disk.yaml

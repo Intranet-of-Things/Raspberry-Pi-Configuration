@@ -1,26 +1,22 @@
 ---
     - hosts: all
       become: true
-    
-      vars:
-        default_container_name: hello-docker
-        default_container_image: hello-world
-    
+
       tasks:
         - name: Creates directory
           file:
             path: /media/Intranet-of-Things
             state: directory
-            owner: pi
-            group: pi
-    
+            owner: malinka
+            group: malinka
+
         - name: Install package for NTFS partition
           apt:
             pkg:
               - ntfs-3g
             state: latest
             update_cache: true
-    
+
         - name: Mount USB disk
           mount:
             path: /media/Intranet-of-Things
